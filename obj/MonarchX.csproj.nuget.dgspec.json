@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Shahrukh\\Documents\\Projects\\MonarchX\\MonarchX.csproj": {}
+    "C:\\Users\\Shahrukh\\Documents\\MonarchX\\MonarchX\\MonarchX.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Shahrukh\\Documents\\Projects\\MonarchX\\MonarchX.csproj": {
+    "C:\\Users\\Shahrukh\\Documents\\MonarchX\\MonarchX\\MonarchX.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Shahrukh\\Documents\\Projects\\MonarchX\\MonarchX.csproj",
+        "projectUniqueName": "C:\\Users\\Shahrukh\\Documents\\MonarchX\\MonarchX\\MonarchX.csproj",
         "projectName": "MonarchX",
-        "projectPath": "C:\\Users\\Shahrukh\\Documents\\Projects\\MonarchX\\MonarchX.csproj",
+        "projectPath": "C:\\Users\\Shahrukh\\Documents\\MonarchX\\MonarchX\\MonarchX.csproj",
         "packagesPath": "C:\\Users\\Shahrukh\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Shahrukh\\Documents\\Projects\\MonarchX\\obj\\",
+        "outputPath": "C:\\Users\\Shahrukh\\Documents\\MonarchX\\MonarchX\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Shahrukh\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,6 +40,20 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
