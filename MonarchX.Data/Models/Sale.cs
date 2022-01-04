@@ -8,16 +8,14 @@ namespace MonarchX.Data.Models
 
         //Invoice ID
         [Key]
+        public int Id { get; set; }
         public string InvoiceId { get; set; }
-
-        public Customer Customer { get; set; } 
-        
-        [ForeignKey("Customer")]
-        public int CustomerFK { get; set; }
         public decimal TotalSale { get; set; }
         //Items Sold
         public List<Product> Items { get; set; }
         [StringLength(50)]
         public string Notes { get; set; }
+        public string CustomerId { get; set; }
+        public virtual Customer Customer { get; set; }
     }
 }

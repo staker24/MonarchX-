@@ -17,7 +17,7 @@ namespace MonarchX.Data
         }
 
         //Saves new customer into the database 
-        public async Task<int> AddNewCustomer(string firstName, string lastName, string address, string? address2, PhoneAttribute phone, string email){
+        public async Task<int> AddNewCustomer(string firstName, string lastName, string address, string? address2, int phone, string email){
 
             Customer newCustomer = new Customer(){
 

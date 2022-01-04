@@ -18,7 +18,7 @@ namespace MonarchX.Data
 
             var config = configBuilder.Build();
 
-            string connectionString = config.GetConnectionString("BillingStoreDb");
+            string connectionString = config.GetConnectionString("localdb");
 
             Console.Write($"Connection string: {connectionString}");
 

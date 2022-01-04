@@ -6,6 +6,7 @@ namespace MonarchX.Data.Models
     public class Customer
     {   
         [Key]
+        public int Id { get; set; }
          public string CustomerId { get; set; }
 
          [StringLength(50)]
@@ -28,7 +29,7 @@ namespace MonarchX.Data.Models
 
         [StringLength(15)]
         public string Email { get; set; }
-        public PhoneAttribute PhoneNumber { get; set; }
+        public int PhoneNumber { get; set; }
         public  decimal AmountOwed { get; set; }
     }
 }

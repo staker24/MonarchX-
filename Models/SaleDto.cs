@@ -5,7 +5,8 @@ namespace MonarchX.Models
     public class SaleDto
     {   
         //Invoice ID
-        public int Id { get; set; }
+        [Key]
+        public string InvoiceId { get; set; }
         public CustomerDto Customer { get; set; }
         public decimal TotalSale { get; set; }
         //Items Sold
