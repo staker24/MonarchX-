@@ -7,7 +7,8 @@ namespace MonarchX.Data.Models
     {
 
         //Invoice ID
-        public int Id { get; set; }
+        [Key]
+        public string InvoiceId { get; set; }
 
         public Customer Customer { get; set; } 
         

@@ -4,7 +4,7 @@ namespace MonarchX.Models
 {
     public class CustomerDto
     {      
-        public int Id { get; set; }
+        public int CustomerId { get; set; }
         public string StreetAddress { get; set; }
         public string Address2 { get; set; }
         public string Zip { get; set; }

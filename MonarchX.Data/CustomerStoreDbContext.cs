@@ -33,15 +33,15 @@ namespace MonarchX.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Customer>()
-                        .HasIndex(e => e.Id)
+                        .HasIndex(e => e.CustomerId)
                         .IsUnique();
 
             modelBuilder.Entity<Product>()
-                        .HasIndex(e => e.Id)
+                        .HasIndex(e => e.ItemNumber)
                         .IsUnique();
                          
            modelBuilder.Entity<Sale>()
-                        .HasIndex(e=>e.Id)
+                        .HasIndex(e=>e.InvoiceId)
                         .IsUnique();
                     
 

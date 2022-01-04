@@ -5,7 +5,7 @@ namespace MonarchX.Data.Models
     public class Product
     {   
         [Key]
-        public int Id { get; set; }
+        public string ItemNumber { get; set; }
              
         [StringLength(30)]
         public string ItemName { get; set; }

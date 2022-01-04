@@ -6,7 +6,7 @@ namespace MonarchX.Data.Models
     public class Customer
     {   
         [Key]
-         public int Id { get; set; }
+         public string CustomerId { get; set; }
 
          [StringLength(50)]
         public string StreetAddress { get; set; }
