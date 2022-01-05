@@ -12,6 +12,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using MonarchX.Composers;
 using MonarchX.Data;
 
 namespace MonarchX
@@ -34,6 +35,8 @@ namespace MonarchX
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "test", Version = "v1" });
             });
+
+            services.AddScoped<ICustomerComposer, CustomerComposer>();
 
             services.AddDbContext<CustomerStoreDbContext>(options =>
             {

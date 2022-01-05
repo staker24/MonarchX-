@@ -4,7 +4,7 @@ namespace MonarchX.Models
 {
     public class ProductDto
     {   
-        [Key]
+
         public string ItemNumber { get; set; }       
         public string ItemName { get; set; }
         public int Stock { get; set; }

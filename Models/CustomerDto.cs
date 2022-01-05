@@ -13,7 +13,7 @@ namespace MonarchX.Models
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Email { get; set; }
-        public PhoneAttribute PhoneNumber { get; set; }  
+        public int PhoneNumber { get; set; }  
         public  decimal AmountOwed { get; set; }
     }
 }
